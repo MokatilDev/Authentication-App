@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: #fff !important;
+  }
+}
+
+@layer base {
+  * {
+    @apply outline-none box-border;
+  }
+  body {
+    @apply font-manrope text-xl p-0 m-0 font-medium bg-black text-white;
+  }
+}
